@@ -1,0 +1,12 @@
+# NOTE: update this with your service name
+service: access-ssm
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: eu-west-1
+
+layers:
+  access-ssm:
+    path: src
