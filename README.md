@@ -16,6 +16,7 @@ This repo is only intended to be used a reference to a complete version of using
 Assuming you have your AWS credentials set up (if not see [here](https://serverless.com/framework/docs/providers/aws/guide/credentials/))
 
 - `git clone git@github.com:robcronin/lambda-with-layer-example.git`
+- Add a secret to your paramter store with key `test_secret`
 - Deploy layer:
   - `cd access-ssm`
   - `yarn`
@@ -25,3 +26,4 @@ Assuming you have your AWS credentials set up (if not see [here](https://serverl
   - `cd lambda-with-ssm-layer`
   - `yarn`
   - `yarn deploy`
+- Try out the lambda endpoint returned and it show the value of your `test_secret`
